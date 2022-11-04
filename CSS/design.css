@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+/* css for navbar */
+nav {
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    background-color: rgb(225, 241, 251);
+    font-size: 1px;
+    box-shadow: 0 1px 10px rgb(156, 156, 156);
+
+}
+
+.navMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 5px;
+    font-family: "Garamond";
+}
+
+
+.navMenu a:hover {
+    color: blueviolet;
+}
+
+/* css for search bar */
+.searchbar {
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+
+.searchContents {
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    color: black;
+    font-family: "Nunito";
+    background-color: inherit;
+
+}
+
+.search:focus {
+    outline: none;
+
+}
+
+/* css for icon */
+.iconbutton {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* css for footer */
+.footerbox {
+    display: inline-block;
+    width: 20%;
+    margin: 2%
+}
+
+.footer {
+    padding-left: 10%;
+    font-size: 15px;
+    background-color: rgb(225, 241, 251);
+    box-shadow: 0px 1px 20px rgb(208, 226, 255) inset;
+    font-family: sans-serif;
+    color: black;
+}
+
+.footer td {
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/* copyright css */
+.copyright {
+    text-align: center;
+    background-color: rgb(208, 226, 255);
+    box-shadow: 0px 1px 20px rgb(195, 218, 255) inset;
+    padding: 1%;
+    font-size: 14px;
+}

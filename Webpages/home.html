@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/design.css">
+
+    <style>
+        .cards {
+            padding-top: 20px;
+            padding-left: 10%;
+        }
+
+        .card {
+            width: 11%;
+            display: inline-block;
+            margin: 2%;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 1px;
+            box-shadow: 1px 1px 10px rgb(163, 163, 163);
+            height: 200px;
+        }
+
+        .title h1 {
+            font-size: 15px;
+            padding-top: 5px;
+            font-family: Sans-serif;
+        }
+
+        .des {
+            font-family: Cambria;
+            font-size: 14px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: inherit;
+            border: 1px solid rgb(48, 161, 231);
+            color: rgb(48, 161, 231);
+            border-radius: 5px;
+            padding: 7px;
+        }
+
+        .buttons:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transition: .2s;
+            cursor: pointer;
+        }
+
+        .buttons:hover .image {
+            opacity: 0.3;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 120px;
+        }
+
+        .categories h1 {
+            color: black;
+            font-family: Sans-serif;
+            font-size: 20px;
+        }
+
+        .categories a {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: rgb(48, 161, 231);
+        }
+
+        .categories a:hover {
+            color: black;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: rgb(161, 216, 255);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #7db1ff;
+        }
+
+        /* Fading animation */
+        .myslides {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    </style>
+
+</head>
+
+<body>
+        <!-- navigation menu start -->
+        <nav>
+
+            <!-- navigation links  -->
+            <div class="navMenu">
+                <a href="../Webpages/home.html">Home</a>
+                <a href="../Webpages/product.html">Products</a>
+                <a href="../Webpages/aboutus.html">About Us</a>
+                <a href="../Webpages/blog.html">Blog</a>
+                <a href="../Webpages/research.html">Research</a>
+            </div>
+            <!-- --------------------- -->
+    
+            <!-- logo of the website  -->
+            <img alt="logo" src="../Images/Logo2.png" style="height: 50px; width: 150px; size: cover;">
+    
+    
+            <!-- searchbar start  -->
+            <div class="searchbar">
+                <table class="searchContents">
+                    <tr>
+                        <th>
+                            <input type="text" placeholder="Search any books here..." class="search">
+                        </th>
+                        <th>
+                            <button class="iconbutton"><img src="../Images/magicon.png" height="20px" width="20px"></button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <!-- searchbar end -->
+    
+            <!-- icons on the right side of navigation -->
+            <div>
+                <a href="#"><button class="iconbutton"><img src="../Images/usericon.png" height="30px"
+                            width="30px"></button></a>
+                <a href="#"><button class="iconbutton"><img src="../Images/carticon.png" height="30px"
+                            width="30px"></button></a>
+                <a href="#"><button class="iconbutton"><img src="../Images/markicon.png" height="30px"
+                            width="30px"></button></a>
+            </div>
+            <!-- ----------- -->
+    
+        </nav>
+        <!-- navigation menu end -->
+    
+        <!-- banner images as slider   -->
+    <div class="slideshow" style="margin-top: 65px;">
+
+        <div class="mySlides">
+            <img src="../Images/ss1.PNG" style="width:100%; height: 65vh;">
+        </div>
+
+        <div class="mySlides">
+            <img src="../Images/ss.PNG" style="width:100%; height: 65vh;">
+        </div>
+
+        <div class="mySlides">
+            <img src="../Images/ss3.PNG" style="width:100%; height: 65vh;">
+        </div>
+
+    </div>
+    <!-- ---------------------- -->
+    <br>
+
+    <!-- dot below the slider  -->
+    <div style="text-align:center;">
+        <p class="dot"></p>
+        <p class="dot"></p>
+        <p class="dot"></p>
+    </div>
+    <!-- -----------------  -->
+
+    <!-- first row of lists of books code start  -->
+    <div class="cards">
+
+        <!-- category name of the books  -->
+        <div class="categories">
+            <h1 class="categoryName">Recently added</h1>
+            <a href="../Webpages/product.html">
+                <p>View All</p>
+            </a>
+        </div>
+        <!-- ---------------------  -->
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/afterDark.jpg">
+            </div>
+
+            <div class="title">
+                <h1>After<br>Dark</h1>
+            </div>
+
+            <div class="des">
+                <p>Haruki Murakami<br>USD. 640</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/womanwhite.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Woman<br>In White</h1>
+            </div>
+
+            <div class="des">
+                <p>Wilkie Collins<br>USD. 610</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/silence.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Silence Of<br>The Lambs</h1>
+            </div>
+
+            <div class="des">
+                <p>Thomas Harris<br>USD. 450</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/beBeforeYou.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Me Before <br>You</h1>
+            </div>
+
+            <div class="des">
+                <p>Jojo Moyes<br>USD. 540</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/peach.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Peach Blossom <br>Spring</h1>
+            </div>
+
+            <div class="des">
+                <p>Melissa Fu<br>USD. 505</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/wildAndWicked.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Wild And Wicked<br> Things</h1>
+            </div>
+
+            <div class="des">
+                <p>Francesca May<br>USD. 510</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- first row of lists of books code end  -->
+
+
+    <!-- second row of lists of books code start  -->
+    <div class="cards">
+
+        <!-- category name of the books  -->
+        <div class="categories">
+            <h1 class="categoryName">Best Sellers</h1>
+            <a href="product.html">
+                <p>View All</p>
+            </a>
+        </div>
+        <!-- -------------------  -->
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/bookThief.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Book <br> Thief</h1>
+            </div>
+
+            <div class="des">
+                <p>Markus Zusak<br> USD. 490</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/stephenHawking.jpg">
+            </div>
+
+            <div class="title">
+                <h1>A Brief History<br> Of Time</h1>
+            </div>
+
+            <div class="des">
+                <p>Stephen Hawking<br> 700</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/train.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Girl On<br>The Train</h1>
+            </div>
+
+            <div class="des">
+                <p>Paula Hawkins<br>USD. 580</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/fault.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Fault in our Stars</h1>
+            </div>
+
+            <div class="des">
+                <p>John Green<br> USD. 500</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/tattoo.jpg">
+            </div>
+
+            <div class="title">
+                <h1>The Girl With The<br> Dragon Tatto</h1>
+            </div>
+
+            <div class="des">
+                <p>Stieg Larrson<br>USD. 590</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../Images/pride.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Pride and Prejuidce</h1>
+            </div>
+
+            <div class="des">
+                <p>Jane Austen<br> USD. 560</p>
+                <button class="buttons">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- second row of lists of books code end  -->
+
+
+
+    <footer>
+        <div class="footer">
+            <!-- website logo and description of website in footer section -->
+            <div class="footerbox">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../Images/Logo2.png" alt="logo" style="height: 70px; width:150px; size:cover">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Providing quality books for our readers.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Happy Reading!!</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="aboutus.html">Learn more About Us</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ---------------------------- -->
+
+            <!-- main office of the store in footer part -->
+            <div class="footerbox">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../Images/office.png" height="30px" width="30px">OUR MAIN OFFICE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>San Franciso, Calfornia, US</td>
+                    </tr>
+                    <tr>
+                        <td>P.O. BOX: 553902</td>
+                    </tr>
+                    <tr>
+                        <td>Phone: (+1) 998 2345</td>
+                    </tr>
+                    <tr>
+                        <td>Mail: admin@tellingtales.com</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- -------------------------------- -->
+
+            <!-- social medias of the website in footer part -->
+            <div class="footerbox">
+
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <img src="../Images/share.png" height="20px" width="20px">KEEP IN TOUCH WITH US
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/facebook.png" height="15px" width="15px"> </td>
+                        <td><a href="#">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/instagram.png" height="15px" width="15px"> </td>
+                        <td><a href="#">Instagram</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/twitter.png" height="15px" width="15px"> </td>
+                        <td><a href="#">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/googleplus.png" height="15px" width="15px"> </td>
+                        <td><a href="#">Google Plus</a></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ----------------------------------- -->
+
+            <!-- informations part in the footer -->
+            <div class="footerbox">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <img src="../Images/information.png" height="20px" width="20px">INFORMATIONS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">FAQ</a></td>
+                        <td><a href="aboutus.html">About Us</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Contact Us</a></td>
+                        <td><a href="blog.html">Blog</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">My Account</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Terms & Conditions</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <!-- -------------------------------------- -->
+
+        <!-- the copyright section in footer  -->
+        </div>
+        <div class="copyright">
+            &copy 2022 TellingTales Ptd. Ltd. ALL RIGHTS RESERVED
+        </div>
+        <!-- ----------------------------------- -->
+
+    </footer>
+    
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+</body>
+
+</footer>
+</body>
+
+</html>
